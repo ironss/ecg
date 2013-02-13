@@ -4,7 +4,7 @@
 local re = require 're'
 --local pretty = require 'pl.pretty'
 
-local function read(name)
+local function read_csv(name)
    local prefix, basename = name:match('(.*/)(.+)')
    local hea_filename = name .. '.hea'
    
@@ -56,7 +56,7 @@ end
 
 local M = {}
 
-M.read = read
+M.read_csv = read_csv
 
 return M
 
