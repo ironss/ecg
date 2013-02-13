@@ -1,8 +1,8 @@
 #! /usr/bin/lua
 
 -- Read a bunch of samples from a physionet data file in CSV format.
-re = require 're'
-pretty = require 'pl.pretty'
+local re = require 're'
+--local pretty = require 'pl.pretty'
 
 local function read(name)
    local prefix, basename = name:match('(.*/)(.+)')
@@ -53,9 +53,10 @@ local function read(name)
 end
 
 
-waveforms1 = read('data/sim/ecg_1')
-waveforms2 = read('data/sim/ecg_2')
 
-pretty.dump(waveforms1)
-pretty.dump(waveforms2)
+local M = {}
+
+M.read = read
+
+return M
 
