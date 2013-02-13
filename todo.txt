@@ -4,7 +4,7 @@
 
 3. Display a single trace, a part of it
 
-4. Display multiple traces, nicely scaled and spaced out
+4. Display multiple traces, nicely scaled and spaced out -- DONE
 
 5. Allow the program to adjust which part of the trace is displayed
 
