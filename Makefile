@@ -6,3 +6,4 @@ data/sim: archive/sim.tar.gz
 	
 clean:
 	rm -rf data/sim
+
