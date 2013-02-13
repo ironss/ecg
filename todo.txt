@@ -1,6 +1,6 @@
 1. Read physionet ECG data into memory -- DONE
 
-2. Display a single trace, the whole thing
+2. Display a single trace, the whole thing -- DONE
 
 3. Display a single trace, a part of it
 
