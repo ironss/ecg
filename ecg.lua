@@ -1,6 +1,6 @@
 #! /usr/bin/lua
 
-local pcsv = require 'physionet_csv'
+local pcsv = require 'physionet'
 local pretty = require 'pl.pretty'
 
 waveforms1 = pcsv.read('data/sim/ecg_1')
