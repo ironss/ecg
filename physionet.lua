@@ -4,7 +4,7 @@
 local re = require 're'
 --local pretty = require 'pl.pretty'
 
-local function read_csv(name)
+local function read_hea(name)
    local prefix, basename = name:match('(.*/)(.+)')
    local hea_filename = name .. '.hea'
    
@@ -21,6 +21,12 @@ local function read_csv(name)
    local c = f:read('*a')
    local waveforms = hea_pattern:match(c)
    
+   return waveforms
+end
+   
+local function read_csv(name)
+   local waveforms = read_hea(name)
+
    for _, waveform in ipairs(waveforms) do
       --print(waveform.name)
       waveform.samples = {}
