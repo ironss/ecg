@@ -2,7 +2,7 @@
 
 2. Display a single trace, the whole thing -- DONE
 
-3. Display a single trace, a part of it
+3. Display a single trace, a part of it -- DONE
 
 4. Display multiple traces, nicely scaled and spaced out -- DONE
 
